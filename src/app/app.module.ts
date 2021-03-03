@@ -7,6 +7,7 @@ import { PagesModule } from './pages/pages.module';
 
 import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { ThemeService } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,9 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     AppRoutingModule,
     PagesModule,
     AuthModule
+  ],
+  providers: [
+    ThemeService
   ],
   bootstrap: [AppComponent]
 })
